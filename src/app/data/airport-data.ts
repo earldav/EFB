@@ -26,7 +26,7 @@ export class AirportDataService {
   /** shareReplay(1) = se descarga una sola vez, todas las pantallas
    *  que lo pidan después reciben el mismo dato ya en memoria. */
   private readonly all$: Observable<AirportRecord[]> = this.http
-    .get<RawAirportsFile>('/data/airports.json')
+    .get<RawAirportsFile>('data/airports.json')
     .pipe(
       map((raw) => Object.values(raw)),
       shareReplay(1)

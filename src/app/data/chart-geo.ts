@@ -171,7 +171,7 @@ export function createPlateFrame(
           x: Math.round(x * 10) / 10,
           y: Math.round(y * 10) / 10,
           size: size + 0.8,
-          url: `/data/tiles/${TILE_ZOOM}/${tileSet.x0 + i}/${tileSet.y0 + j}.png`,
+          url: `data/tiles/${TILE_ZOOM}/${tileSet.x0 + i}/${tileSet.y0 + j}.png`,
         });
       }
     }

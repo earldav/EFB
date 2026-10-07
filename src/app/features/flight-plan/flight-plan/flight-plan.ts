@@ -110,7 +110,7 @@ function monotoneCurvePath(pts: { x: number; y: number }[]): string {
               <div class="tile-grid">
                 @for (ty of tileRows; track ty) {
                   @for (tx of tileCols; track tx) {
-                    <img class="tile-img" [src]="'/data/tiles/7/' + tx + '/' + ty + '.png'" alt="" />
+                    <img class="tile-img" [src]="'data/tiles/7/' + tx + '/' + ty + '.png'" alt="" />
                   }
                 }
               </div>
