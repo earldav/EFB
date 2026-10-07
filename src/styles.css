@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/*
+  EFB DESIGN TOKENS
+  ------------------
+  Estética de instrumento de cabina real (ForeFlight / Garmin / EICAS):
+  paneles oscuros, ámbar como acento primario (el clásico CDU/EFIS),
+  cian para navegación/mapa, monoespaciada para cualquier dato.
+*/
+:root {
+  --efb-bg: #0a0e13;
+  --efb-panel: #121820;
+  --efb-panel-raised: #182029;
+  --efb-line: #26313c;
+  --efb-line-strong: #34404c;
+
+  --efb-text: #e8edf2;
+  --efb-text-dim: #8b9aa8;
+  --efb-text-faint: #566573;
+
+  --efb-amber: #ffb300;
+  --efb-amber-dim: #8a5f10;
+  --efb-cyan: #5ecbe0;
+  --efb-cyan-dim: #2c5560;
+  --efb-green: #6fd08c;
+  --efb-red: #ff5c5c;
+  --efb-violet: #a68bff; /* reservado exclusivamente para el hilo de Elisa */
+
+  --font-data: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-ui: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-panel: 3px;
+  --radius-chip: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--efb-bg);
+  color: var(--efb-text);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--efb-amber-dim);
+  color: var(--efb-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--efb-cyan);
+  outline-offset: 2px;
+}
